@@ -1,0 +1,60 @@
+:root {
+  color-scheme: light;
+
+  /* One friendly hue drives the whole palette (turquoise, not generic blue). */
+  --hue: 196;
+  --warm: 84;
+
+  --bg: oklch(0.985 0.01 220);
+  --bg-deep: oklch(0.955 0.025 var(--hue));
+  --surface: oklch(1 0 0);
+  --surface-sunken: oklch(0.968 0.008 var(--hue));
+
+  --ink: oklch(0.28 0.03 262);
+  --ink-soft: oklch(0.43 0.03 262);
+  --ink-muted: oklch(0.47 0.022 262);
+
+  --line: oklch(0.9 0.015 250);
+  --line-strong: oklch(0.8 0.02 250);
+
+  --accent: oklch(0.62 0.12 var(--hue));
+  --accent-strong: oklch(0.5 0.13 var(--hue));
+  --accent-soft: oklch(0.94 0.045 var(--hue));
+  --accent-ink: oklch(0.36 0.08 var(--hue));
+
+  --cell-selected: oklch(0.85 0.11 var(--warm));
+  --cell-word: oklch(0.955 0.04 var(--hue));
+  --cell-block: oklch(0.4 0.018 262);
+
+  --correct: oklch(0.64 0.15 156);
+  --wrong: oklch(0.58 0.2 26);
+  --wrong-soft: oklch(0.94 0.06 26);
+  --reveal: oklch(0.78 0.13 var(--warm));
+  --reveal-soft: oklch(0.95 0.06 var(--warm));
+
+  --radius-xs: 0.4rem;
+  --radius-sm: 0.6rem;
+  --radius: 0.9rem;
+  --radius-lg: 1.4rem;
+  --radius-pill: 999px;
+
+  --shadow-1: 0 1px 2px oklch(0.4 0.03 262 / 0.1), 0 3px 8px oklch(0.4 0.03 262 / 0.07);
+  --shadow-2: 0 2px 6px oklch(0.4 0.03 262 / 0.12), 0 16px 36px oklch(0.4 0.03 262 / 0.18);
+
+  /* Spacing rhythm: 1 - 4 - 9 */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2.25rem;
+
+  --tap: 2.75rem;
+  --board-size: min(94vw, 23rem, 56svh);
+  --board-gap: clamp(0.22rem, 1.4vw, 0.4rem);
+  --cell-radius: 0.65rem;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+}

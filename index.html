@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f6f9fb" />
+    <meta name="description" content="A cozy 4x4 mini crossword you can play in the browser." />
+    <title>Mini Crossword</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true">4&#215;4</span>
+          <div class="brand__text">
+            <h1 class="brand__title" id="puzzle-title">Mini Crossword</h1>
+            <p class="brand__sub" id="puzzle-sub">Loading puzzle&#8230;</p>
+          </div>
+        </div>
+        <div class="timer" id="timer" role="timer" aria-label="Elapsed time">0:00</div>
+      </header>
+
+      <main class="main">
+        <section class="cluebar" id="cluebar" aria-label="Current clue" aria-live="polite">
+          <span class="cluebar__tag" id="active-tag">Across</span>
+          <p class="cluebar__text" id="active-clue">Loading puzzle&#8230;</p>
+        </section>
+
+        <div class="board-wrap">
+          <div class="board" id="board" role="group" aria-label="Crossword grid"></div>
+        </div>
+
+        <section class="controls" id="controls" aria-label="Game actions"></section>
+
+        <section class="keyboard" id="keyboard" aria-label="On-screen keyboard"></section>
+
+        <section class="clues" id="clue-lists" aria-label="Clue list"></section>
+      </main>
+    </div>
+
+    <div class="win" id="win" hidden>
+      <div class="win__card" role="dialog" aria-modal="true" aria-labelledby="win-title">
+        <p class="win__eyebrow" id="win-eyebrow">Solved</p>
+        <h2 class="win__title" id="win-title">Nice work!</h2>
+        <p class="win__time" id="win-time">Time 0:00</p>
+        <div class="win__actions">
+          <button class="btn btn--primary" id="win-next" type="button">Next puzzle</button>
+          <button class="btn btn--quiet" id="win-close" type="button">Back to grid</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

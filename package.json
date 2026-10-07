@@ -1,0 +1,18 @@
+{
+  "name": "mini-crossword",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A 4x4 mini crossword game for the browser.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test",
+    "generate:puzzles": "node scripts/generate-puzzles.mjs",
+    "validate:puzzles": "node scripts/validate-puzzles.mjs"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}

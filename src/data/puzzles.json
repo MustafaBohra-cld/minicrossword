@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "size": 4,
+  "minEntryLength": 3,
+  "puzzles": [
+    {
+      "id": "001",
+      "title": "Warm Up",
+      "difficulty": "easy",
+      "grid": [
+        "CALM",
+        "AREA",
+        "SEAT",
+        "TAPE"
+      ],
+      "clues": {
+        "across": {
+          "1": "Peaceful and quiet",
+          "5": "Region or zone",
+          "6": "Place to sit",
+          "7": "Sticky strip"
+        },
+        "down": {
+          "1": "Throw, or a plaster wrap",
+          "2": "Region or zone",
+          "3": "Big jump",
+          "4": "A partner"
+        }
+      }
+    },
+    {
+      "id": "002",
+      "title": "Sunny Side",
+      "difficulty": "easy",
+      "grid": [
+        "SCAR",
+        "ORCA",
+        "FORM",
+        "APE#"
+      ],
+      "clues": {
+        "across": {
+          "1": "Mark left by a wound",
+          "5": "Black-and-white sea hunter",
+          "6": "Shape, or a paper to fill",
+          "7": "Chimp relative"
+        },
+        "down": {
+          "1": "Comfy couch",
+          "2": "Harvested plants",
+          "3": "Land measure",
+          "4": "Male sheep"
+        }
+      }
+    },
+    {
+      "id": "003",
+      "title": "Green Thumb",
+      "difficulty": "easy",
+      "grid": [
+        "GRIP",
+        "RACE",
+        "IRON",
+        "DEN#"
+      ],
+      "clues": {
+        "across": {
+          "1": "Firm hold",
+          "5": "Speed contest",
+          "6": "Metal, or a clothes presser",
+          "7": "Animal’s lair"
+        },
+        "down": {
+          "1": "Crossing set of lines",
+          "2": "Hard to find",
+          "3": "Small symbol on screen",
+          "4": "Ink writer"
+        }
+      }
+    },
+    {
+      "id": "004",
+      "title": "Snack Break",
+      "difficulty": "medium",
+      "grid": [
+        "ACE#",
+        "ROAM",
+        "CASE",
+        "#TEN"
+      ],
+      "clues": {
+        "across": {
+          "1": "Top playing card",
+          "4": "Wander freely",
+          "6": "Container for keeping",
+          "7": "Two fives"
+        },
+        "down": {
+          "1": "A curved line",
+          "2": "Warm outer layer",
+          "3": "Freedom from effort",
+          "5": "Grown-up fellows"
+        }
+      }
+    },
+    {
+      "id": "005",
+      "title": "Ocean Breeze",
+      "difficulty": "medium",
+      "grid": [
+        "#BED",
+        "PEAR",
+        "EASY",
+        "ANT#"
+      ],
+      "clues": {
+        "across": {
+          "1": "Place to sleep",
+          "4": "Green bell-shaped fruit",
+          "5": "Not hard",
+          "6": "Tiny worker"
+        },
+        "down": {
+          "1": "Seed in a pod",
+          "2": "Sunrise direction",
+          "3": "Not wet",
+          "4": "Small green veggie"
+        }
+      }
+    },
+    {
+      "id": "006",
+      "title": "Game Night",
+      "difficulty": "easy",
+      "grid": [
+        "CAMP",
+        "AREA",
+        "REAL",
+        "DALE"
+      ],
+      "clues": {
+        "across": {
+          "1": "Outdoor stay in tents",
+          "5": "Region or zone",
+          "6": "Genuine",
+          "7": "Valley"
+        },
+        "down": {
+          "1": "Paper in a deck",
+          "2": "Region or zone",
+          "3": "Food at one sitting",
+          "4": "Light in color"
+        }
+      }
+    },
+    {
+      "id": "007",
+      "title": "Garden Path",
+      "difficulty": "easy",
+      "grid": [
+        "KITE",
+        "IDEA",
+        "NEAR",
+        "DAM#"
+      ],
+      "clues": {
+        "across": {
+          "1": "Flies on a string",
+          "5": "A thought",
+          "6": "Close by",
+          "7": "River blocker"
+        },
+        "down": {
+          "1": "Nice to others",
+          "2": "A thought",
+          "3": "Group of players",
+          "4": "You hear with it"
+        }
+      }
+    },
+    {
+      "id": "008",
+      "title": "Story Time",
+      "difficulty": "medium",
+      "grid": [
+        "ACE#",
+        "GOLD",
+        "ELSE",
+        "#DEW"
+      ],
+      "clues": {
+        "across": {
+          "1": "Top playing card",
+          "4": "Precious yellow metal",
+          "6": "Other than this",
+          "7": "Morning grass drops"
+        },
+        "down": {
+          "1": "How old you are",
+          "2": "Not warm",
+          "3": "Other than this",
+          "5": "Morning grass drops"
+        }
+      }
+    },
+    {
+      "id": "009",
+      "title": "Mountain Air",
+      "difficulty": "medium",
+      "grid": [
+        "ACT#",
+        "CLAM",
+        "TAKE",
+        "#PEN"
+      ],
+      "clues": {
+        "across": {
+          "1": "Do something",
+          "4": "Shellfish in two shells",
+          "6": "Grab",
+          "7": "Ink writer"
+        },
+        "down": {
+          "1": "Do something",
+          "2": "Applaud",
+          "3": "Grab",
+          "5": "Grown-up fellows"
+        }
+      }
+    },
+    {
+      "id": "010",
+      "title": "Final Round",
+      "difficulty": "medium",
+      "grid": [
+        "#APE",
+        "TREE",
+        "REAL",
+        "YAK#"
+      ],
+      "clues": {
+        "across": {
+          "1": "Chimp relative",
+          "4": "It has a trunk and leaves",
+          "5": "Genuine",
+          "6": "Shaggy mountain ox"
+        },
+        "down": {
+          "1": "Region or zone",
+          "2": "Mountain top",
+          "3": "Slippery fish",
+          "4": "Give it a go"
+        }
+      }
+    }
+  ]
+}

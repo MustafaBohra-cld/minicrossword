@@ -1,0 +1,274 @@
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100svh;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  width: min(100%, 62rem);
+  margin: 0 auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.brand__mark {
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: var(--radius-sm);
+  background: var(--accent-strong);
+  color: oklch(0.99 0.01 var(--hue));
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  box-shadow: var(--shadow-1);
+}
+
+.brand__title {
+  font-size: 1.1rem;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+}
+
+.brand__sub {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+
+.timer {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-1);
+}
+
+.main {
+  display: grid;
+  gap: var(--sp-3);
+  align-content: start;
+  width: min(100%, 30rem);
+  margin: 0 auto;
+  padding: 0 var(--sp-4) var(--sp-5);
+  grid-template-areas:
+    'cluebar'
+    'board'
+    'controls'
+    'keyboard'
+    'clues';
+}
+
+.cluebar {
+  grid-area: cluebar;
+}
+
+.board-wrap {
+  grid-area: board;
+  display: grid;
+  place-items: center;
+}
+
+.controls {
+  grid-area: controls;
+}
+
+.keyboard {
+  grid-area: keyboard;
+}
+
+.clues {
+  grid-area: clues;
+}
+
+.cluebar {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  min-height: 3.25rem;
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+
+.cluebar__tag {
+  flex: none;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cluebar__text {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.controls {
+  display: flex;
+  gap: var(--sp-2);
+}
+
+.controls .btn {
+  flex: 1 1 0;
+  font-size: 0.92rem;
+}
+
+.clues {
+  display: grid;
+  gap: var(--sp-4);
+  padding: var(--sp-4);
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+
+.clue-group__title {
+  margin-bottom: var(--sp-2);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.clue-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.clue {
+  display: flex;
+  gap: var(--sp-2);
+  width: 100%;
+  padding: var(--sp-2);
+  border-radius: var(--radius-sm);
+  text-align: left;
+  color: var(--ink-soft);
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+
+.clue:hover {
+  background: var(--surface-sunken);
+}
+
+.clue__num {
+  flex: none;
+  min-width: 1.4em;
+  font-weight: 750;
+  color: var(--accent-ink);
+}
+
+.clue.is-active {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+.win {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: var(--sp-4);
+  background: oklch(0.32 0.03 262 / 0.42);
+  backdrop-filter: blur(2px);
+}
+
+.win[hidden] {
+  display: none;
+}
+
+.win__card {
+  width: min(100%, 21rem);
+  padding: var(--sp-5);
+  text-align: center;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-2);
+  animation: win-pop var(--dur) var(--ease-out) both;
+}
+
+.win__eyebrow {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+}
+
+.win__title {
+  margin-top: var(--sp-1);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.win__time {
+  margin-top: var(--sp-2);
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.win__actions {
+  display: grid;
+  gap: var(--sp-2);
+  margin-top: var(--sp-5);
+}
+
+@keyframes win-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media (min-width: 52rem) {
+  .main {
+    width: min(100%, 62rem);
+    column-gap: var(--sp-5);
+    grid-template-columns: minmax(0, 25rem) minmax(0, 1fr);
+    grid-template-areas:
+      'cluebar clues'
+      'board clues'
+      'controls clues'
+      'keyboard clues';
+  }
+
+  .clues {
+    align-self: start;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .board-wrap {
+    padding-block: var(--sp-1);
+  }
+}
